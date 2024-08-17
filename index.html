@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Temperature Converter</h1>
+
+    <div class="mb-3">
+      <div class="input-group mb-3">
+        <input type="text" name="temp-val-input" class="form-control temp-val-input" placeholder="Enter a value">
+
+        <select class="form-select mx-2 input-con" aria-label="Temperature Unit">
+          <option selected>Select unit</option>
+          <option value="celsius">Celsius</option>
+          <option value="fahrenheit">Fahrenheit</option>
+          <option value="kelvin">Kelvin</option>
+        </select>
+        
+        <select class="form-select mx-2 output-con" aria-label="Convert to">
+          <option selected>Convert to</option>
+          <option value="celsius">Celsius</option>
+          <option value="fahrenheit">Fahrenheit</option>
+          <option value="kelvin">Kelvin</option>
+        </select>
+        
+        <div class="input-group-append">
+          <button class="btn btn-primary" onclick="convert()">Convert</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="error text-center mb-3 alert"></div>
+
+    <div class="temp-div text-center font-weight-bold"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="app.js"></script>
+</body>
+</html>
