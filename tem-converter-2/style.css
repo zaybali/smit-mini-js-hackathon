@@ -1,0 +1,78 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #f7f7f7, #e3e3e3);
+  line-height: 1.6;
+  color: #333; /* Dark gray text */
+  padding: 20px;
+}
+
+.main {
+  max-width: 400px;  /* Ensures the container doesn't stretch too wide */
+  margin: 50px auto; /* Centers the container and adds space from the top */
+  padding: 20px;
+  background-color: #fff; /* White background for the container */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.form {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  gap: 15px; /* Adds space between form elements */
+}
+
+.input-field,
+.input-temp,
+.output-temp {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff; /* Blue background for the button */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+@media (max-width: 600px) {
+  .form {
+    flex-direction: column; /* Stack all elements vertically on small screens */
+  }
+
+  .main {
+    padding: 15px;
+  }
+}
+
+.error {
+  color: red;
+  font-size: 24px;
+  text-align: center;
+}
+
+
+.display-temp {
+  margin-top: 20px;
+  font-size: 24px; /* Larger font for emphasis */
+  font-weight: bold;
+  color: #007bff; /* Blue color for consistency */
+  text-align: center;
+}
